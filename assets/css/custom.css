@@ -1,0 +1,41 @@
+.navbar img {
+  height: 2rem;
+}
+.navbar {
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
+}
+.svg {
+  height: 4rem;
+}
+.side-btn {
+  position: fixed;
+  right: 0;
+  bottom: 50%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+.footer {
+  margin-top: 10rem;
+}
+.mapouter {
+  text-align: right;
+  height: auto;
+  width: 100%;
+}
+.soc-svg {
+  height: 1rem;
+}
+.form-svg {
+  height: 1.5rem;
+  opacity: 0.6;
+}
+.mt-nav {
+  margin-top: 5.5rem !important;
+}
+.green-cont {
+  font-size: 1.8rem;
+}
+.nav-link {
+  color: #77b122 !important;
+}
