@@ -39,3 +39,74 @@
 .nav-link {
   color: #77b122 !important;
 }
+.parallax-window {
+  width: 100%;
+  height: 40rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 255, 98, 0.1),
+    rgba(0, 255, 98, 0.1)
+  );
+}
+.h-40 {
+  height: 40rem;
+}
+.text-darkgreen {
+  color: #1c9c73 !important;
+}
+.op-6 {
+  margin: 0 auto;
+  height: 10rem;
+  transform: rotate(15deg);
+}
+.u-svg {
+  height: 2rem;
+}
+.carousel-inner {
+  height: 80vh;
+}
+@media screen and (max-width: 768px) {
+  .carousel-inner {
+    height: 45vw;
+  }
+}
+body {
+  overflow-x: hidden !important;
+}
+/* .car-text {
+  color: #fff !important;
+  position: relative;
+  top: -100vh;
+  width: 50rem;
+  margin: 0 auto;
+  text-align: center;
+  height: 8rem;
+
+  line-height: 2;
+  background: rgba(0, 0, 0, 0.6);
+} */
+@media screen and (min-width: 996px) {
+  .car-text {
+    /* transform: translateY(-900%); */
+  }
+}
+#weird {
+  background: url('../img/blob-shape.svg');
+  background-position: center;
+  background-size: 110%;
+}
+@media screen and (max-width: 991px) {
+  #weird {
+    height: 30rem;
+    background-size: cover;
+  }
+  .op-6 {
+    height: 10rem;
+  }
+}
+#navtoggle {
+  border: none;
+}
+#navtoggle:focus {
+  outline: none;
+}
