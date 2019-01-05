@@ -1,3 +1,11 @@
+/* @import '../fonts/LemonMilk.otf';
+@import '../fonts/LemonMilklight.otf';
+
+body {
+  font-family: 'Lemon/Milk', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} */
+
 .navbar img {
   height: 2rem;
 }
@@ -10,13 +18,13 @@
 .side-btn {
   position: fixed;
   right: 0;
-  bottom: 50%;
+  bottom: 65%;
   display: flex;
   flex-direction: column;
   z-index: 1000;
 }
 .footer {
-  margin-top: 10rem;
+  padding-top: 2rem;
 }
 .mapouter {
   text-align: right;
@@ -26,18 +34,34 @@
 .soc-svg {
   height: 1rem;
 }
+.list-group-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
 .form-svg {
-  height: 1.5rem;
-  opacity: 0.6;
+  height: 1.6rem;
+  opacity: 1;
 }
 .mt-nav {
-  margin-top: 5.5rem !important;
+  margin-top: 4rem !important;
 }
 .green-cont {
   font-size: 1.8rem;
 }
 .nav-link {
-  color: #77b122 !important;
+  color: #00d084 !important;
+}
+.navbar-brand {
+  height: 3rem;
+}
+.navbar-brand img {
+  height: 2.5rem;
+}
+nav {
+  border-top: 2px solid #00d084 !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }
 .parallax-window {
   width: 100%;
@@ -52,18 +76,35 @@
   height: 40rem;
 }
 .text-darkgreen {
-  color: #1c9c73 !important;
+  color: #00d084 !important;
 }
 .op-6 {
   margin: 0 auto;
   height: 10rem;
-  transform: rotate(15deg);
+  /* transform: rotate(5deg); */
+  cursor: pointer;
 }
+/* .op-6:hover {
+  transform: rotate(30deg);
+} */
+/* @keyframes peek {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+} */
 .u-svg {
   height: 2rem;
 }
 .carousel-inner {
   height: 80vh;
+}
+@media screen and (min-width: 998px) {
+  .carousel-inner {
+    height: 45vw;
+  }
 }
 @media screen and (max-width: 768px) {
   .carousel-inner {
@@ -85,15 +126,56 @@ body {
   line-height: 2;
   background: rgba(0, 0, 0, 0.6);
 } */
+.carousel-caption {
+  display: none !important;
+}
+/*
+  light-grey: #f7f7f7 ;
+*/
 @media screen and (min-width: 996px) {
-  .car-text {
-    /* transform: translateY(-900%); */
+  .carousel-caption {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+    top: 25%;
+    background: rgba(0, 0, 0, 0.7);
+    height: 10rem;
+  }
+  .carousel-caption p,
+  h5 {
+    display: block;
+    margin: 0;
   }
 }
 #weird {
   background: url('../img/blob-shape.svg');
   background-position: center;
   background-size: 110%;
+}
+
+#navtoggle {
+  border: none;
+}
+#navtoggle:focus {
+  outline: none;
+}
+.dropdown-menu {
+  border: none;
+  box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+.bg-lighty {
+  /* background: #f7f7f7 !important; */
+}
+.dropdown-item {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #77b122 !important;
+}
+.dropdown-item:focus {
+  background: #77b122 !important;
+  color: #fff !important;
 }
 @media screen and (max-width: 991px) {
   #weird {
@@ -103,10 +185,150 @@ body {
   .op-6 {
     height: 10rem;
   }
+  .dropdown-menu {
+    box-shadow: none;
+  }
+  .dropdown-item {
+    font-size: 0.8rem;
+  }
 }
-#navtoggle {
-  border: none;
+.con form input,
+textarea {
+  /* font-weight: bold;
+  box-shadow: 0px 6px 1px -4px rgba(0, 0, 0, 0.3); */
 }
-#navtoggle:focus {
-  outline: none;
+.input-group-text {
+  background: transparent !important;
+}
+::placeholder {
+  font-size: 1rem;
+}
+/*
+  Login
+*/
+#invest {
+  background: url('../img/investbg.svg');
+  background-position: -8px 0px;
+  background-repeat: no-repeat;
+  background-size: 110%;
+  min-height: 40rem;
+  padding-top: 5rem;
+  text-align: center;
+}
+.login-grid {
+  display: grid;
+  grid-template: repeat(3, 10rem) / repeat(2, 1fr);
+  row-gap: 1.2rem;
+  column-gap: 2rem;
+}
+
+.login-grid-item:nth-child(1) {
+  background: url('../img/pexels-photo.jpg');
+}
+.login-grid-item:nth-child(2) {
+  grid-row-start: span 2;
+  background: url('../img/pexels-photo-938959.jpeg');
+}
+.login-grid-item:nth-child(3) {
+  background: url('../img/pexels-photo-754769.jpeg');
+}
+.login-grid-item:nth-child(4) {
+  background: url('../img/watering-watering-can-man-vietnam-162637.jpeg');
+}
+.login-grid-item:nth-child(5) {
+  background: url('../img/pexels-photo-68912.jpeg');
+}
+.login-grid-item {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+/* .login-grid-item:hover {
+  filter: blur(2px);
+} */
+.logbtn {
+  display: flex;
+  justify-content: center;
+}
+.login-grid-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff !important;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: opacity 300ms ease-in-out;
+  font-size: 1.5rem;
+}
+.info-gone {
+  opacity: 0;
+}
+.info-vis {
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  .login-grid {
+    grid-template: repeat(5, 10rem) / 1fr;
+  }
+  .login-grid-item {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #invest {
+    background-size: 150%;
+  }
+}
+@media screen and (max-width: 1060px) {
+  #invest h4 {
+    color: #0a0a0a !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  #invest h1 {
+    font-size: 4rem !important;
+  }
+  #invest {
+    background-size: 400vw;
+  }
+}
+.plan-box {
+  background: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 0;
+  box-shadow: 0 0 0 1px rgba(56, 60, 67, 0.05),
+    0 1px 3px 0 rgba(56, 60, 67, 0.2);
+}
+.plan-box li {
+  border: none !important;
+}
+.carousel-caption {
+  animation-duration: 300ms !important;
+  animation-delay: 400ms !important;
+}
+/* FAQ */
+
+.faq-box {
+  border-radius: 0;
+  /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); */
+}
+
+.faq-box .h3 {
+  color: #77b122 !important;
+}
+.team {
+  background-image: linear-gradient(135deg, #00d084 10%, #00e4ff 100%);
+}
+.pos {
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
 }
